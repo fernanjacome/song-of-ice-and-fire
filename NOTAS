@@ -1,0 +1,34 @@
+Proyecto: Gestión de Librería
+
+Descripción:
+Este proyecto es una aplicación de gestión de librería que permite a los usuarios agregar, actualizar, listar y eliminar libros. La aplicación está compuesta por un backend en Express.js que se comunica con una base de datos SQL Server y un frontend en React.js.
+
+Backend:
+
+Tecnologías: Express.js, SQL Server.
+Características:
+Conexión a la base de datos SQL Server.
+Endpoints RESTful para operaciones CRUD:
+GET /books: Devuelve una lista de todos los libros.
+POST /books: Agrega un nuevo libro.
+DELETE /books/:id: Elimina un libro por ID.
+PUT /books/:id: Actualiza un libro por ID.
+Middleware:
+cors: Para permitir solicitudes desde http://localhost:3000.
+express.json(): Para manejar JSON en las solicitudes.
+Frontend:
+
+Tecnologías: React.js, Axios para las solicitudes HTTP.
+Componentes:
+Books: Lista todos los libros, permite eliminar y redirige a la página de actualización.
+Add: Formulario para agregar un nuevo libro.
+Update: Formulario para actualizar un libro existente.
+Rutas:
+/: Página principal que lista todos los libros.
+/add: Página para agregar un nuevo libro.
+/update/:id: Página para actualizar un libro existente.
+Funcionamiento:
+
+Los datos de los libros se almacenan en una base de datos SQL Server.
+El backend maneja las solicitudes HTTP y realiza operaciones en la base de datos.
+El frontend permite a los usuarios interactuar con la aplicación a través de una interfaz gráfica, utilizando Axios para realizar solicitudes HTTP al backend.
